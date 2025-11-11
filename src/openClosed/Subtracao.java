@@ -1,9 +1,15 @@
 package openClosed;
 
-public class Subtracao {
+public class Subtracao  implements  Operacao{
     private double a;
     private double b;
-    private double resultado = 0D;
+    private double resultado;
+
+    @Override
+    public void executar(){
+        resultado = a - b;
+    }
+
 
     public Subtracao(double a, double b) {
         this.a = a;

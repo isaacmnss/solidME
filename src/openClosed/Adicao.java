@@ -1,9 +1,14 @@
 package openClosed;
 
-public class Adicao {
+public class Adicao implements Operacao{
     private double a;
     private double b;
     private double resultado = 0D;
+
+    @Override
+    public void executar(){
+        resultado = a + b;
+    }
 
     public Adicao(double a, double b) {
         this.a = a;
